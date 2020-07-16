@@ -3,14 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalble=no">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="<%= BASE_URL %>libs/swiper-4.1.0.min.css">
+    <script src="<%= BASE_URL %>libs/swiper-4.1.0.min.js"></script>
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+    <style>
+      #app{display: flex;height: 100%;}
+      #app div{margin: auto;}
+    </style>
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>

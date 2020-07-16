@@ -1,0 +1,11 @@
+module.exports={
+    publicPath:'/music',
+    devServer:{
+        proxy:{
+            '/personalized':{
+                target:'http://music.eleuu.com',
+                changeOrigin:true
+            },
+        }
+    }
+}
